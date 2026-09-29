@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: identity-catalog-wishlist-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/shopping}
+    username: ${DB_USERNAME:shopping}
+    password: ${DB_PASSWORD:shopping}
+    hikari:
+      connection-timeout: 3000
+      validation-timeout: 2000
+  transaction:
+    default-timeout: 5s
+  flyway:
+    enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: false
+
+server:
+  forward-headers-strategy: framework
+  error:
+    include-stacktrace: never
+    include-message: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+registration:
+  require-secure-transport: ${REGISTRATION_REQUIRE_SECURE_TRANSPORT:true}
