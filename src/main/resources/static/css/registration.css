@@ -1,0 +1,113 @@
+:root {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #1f2933;
+    background: #f5f7fa;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.hint {
+    color: #52606d;
+    font-size: 0.9rem;
+}
+
+.field {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #9aa5b1;
+    border-radius: 4px;
+}
+
+input[aria-invalid="true"] {
+    border-color: #c62828;
+}
+
+.required-marker {
+    color: #c62828;
+}
+
+.field-error {
+    color: #c62828;
+    font-size: 0.875rem;
+    margin: 0.35rem 0 0;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #1a56db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #7b93c9;
+    cursor: progress;
+}
+
+.banner {
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.banner-error {
+    background: #fdecea;
+    color: #8a1c1c;
+    border: 1px solid #f5c2bd;
+}
+
+.banner-success {
+    background: #e7f6ec;
+    color: #1b5e20;
+    border: 1px solid #b7e1c1;
+}
+
+.banner-success h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}

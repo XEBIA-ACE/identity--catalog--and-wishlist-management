@@ -1,0 +1,3 @@
+# Local development only: allows plain HTTP on localhost. Never enable in deployed environments.
+registration:
+  require-secure-transport: false
